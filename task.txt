@@ -1,0 +1,42 @@
+Image Scroll View
+
+The goal of this test is to create a responsive single-page app which will show a list of images
+retrieved from flickr API. The app should have a front-end and a back-end component,
+behaving as follows:
+
+1. Front end, which offers two columns. Image thumbnails down the left hand side and the
+title of the image down the right hand side.
+2. The app should provide an infinite scroll experience
+3. There should be a back-end component, written as a node module, which performs the
+fetching of images. You don’t want your API key out in the public, after all :)
+4. The app should hold an open connection to the server, taking incremental updates (i.e.
+no poll).
+
+Extra points
+
+For extra points, you can do the following:
+- Add a ‘sort alphabetically’ option, to sort the images on the front-end
+
+API details
+Key: 00ac5f70d662304b87e7da585bbdef9d
+Secret: aff70630a261a66a
+
+If you want to play around with API queries, you can use the YQL console here . It will generate
+a REST query uri at the bottom of the screen as follows:
+
+select * from flickr.photos.recent where api_key=00ac5f70d662304b87e7da585bbdef9d
+https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20flickr.photos.recent%20w
+here%20api_key%3D00ac5f70d662304b87e7da585bbdef9d&format=json&diagnostics=true&ca
+llback=
+
+You can construct image URLs according to the following documentation:
+https://www.flickr.com/services/api/misc.urls.html
+
+Here is a simple example:
+Image object from query response:
+
+{"farm":"6","id":"31253663191","isfamily":"0","isfriend":"0","ispublic":"1","owner":"146037960@N
+02","secret":"d3da9dc2ef","server":"5509","title":"First snow in Seoul"},
+
+The URL you will construct to retrieve a medium size image
+https://farm6.staticflickr.com/5509/ 31253663191 _ d3da9dc2ef .jpg
