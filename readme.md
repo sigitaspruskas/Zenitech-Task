@@ -11,9 +11,9 @@ behaving as follows:*
 **Start a server:** 
 1. Download or clone the project.
 2. In terminal, type 'npm install' - installs all the node module packages that are listed package.json;
-3. nodemon is installed: in terminal type 'npm run dev' -> node module runs "dev" script that launches nodemon;
+3. nodemon is installed: in terminal type 'npm run dev' -> node module runs "dev" script that launches nodemon (or type 'nodemon' if nodemon is installed globally);
 4. The server is running on 5000 port, access it via http://localhost:5000;
-5. **stop server : 'ctrl + C'**
+5. **stop server : 'ctrl + C'**;
 
 **Tips:**
 1. Running server without modules: in terminal, type 'node index'. Stopping server type 'ctrl + C';
