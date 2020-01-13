@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require('node-fetch');
 
-const key = '00ac5f70d662304b87e7da585bbdef9d';
+const key = '00ac5f70d662304b87e7da585bbdef9d'; // my API key
 
 /** 
  *  Creates a route, that gets JSON from flicker API and sends it as a response, when there is a get 

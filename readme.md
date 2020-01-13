@@ -4,8 +4,9 @@ behaving as follows:*
 1. Front end, which offers two columns. Image thumbnails down the left hand side and the title of the image down the right hand side.
 2. The app provides an infinite scroll experience.
 3. Back-end component, written as a node module, which performs the fetching of images. Keeps my API key out of the public.
-4. The app holds an open connection to the server, taking incremental updates (i.e. no poll).
+4. The app holds an open connection to the server, taking incremental updates.
 5. Scroll bar on thumbnail section is hidden.
+6. Enabled button that sorts images by title alphabetically (done in a simple (asc order) way).
 
 ### How to use node server and npm:
 **Start a server:** 
